@@ -1,0 +1,3 @@
+[submodule "Foodinggo"]
+	path = Foodinggo
+	url = https://github.com/pvanquochuy/Foodingo.git

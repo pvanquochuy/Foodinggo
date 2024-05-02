@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <ImageView
+        android:id="@+id/anh"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/white_item_btn"
+        android:elevation="3dp"
+        android:src="@drawable/burger"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tieude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Title"
+        android:textColor="#373B54"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/anh"
+        app:layout_constraintTop_toTopOf="@+id/anh" />
+
+    <TextView
+        android:id="@+id/gia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:text="0.0"
+        android:textColor="#ff3d00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tieude"
+        app:layout_constraintTop_toBottomOf="@+id/tieude" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:text="$"
+        android:textColor="#ff3d00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gia"
+        app:layout_constraintEnd_toStartOf="@+id/gia"
+        app:layout_constraintStart_toStartOf="@+id/tieude"
+        app:layout_constraintTop_toTopOf="@+id/gia" />
+
+
+    <ImageButton
+        android:id="@+id/btn_them"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/orange_background_btn"
+        android:elevation="3dp"
+        android:src="@drawable/cart_white"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:background="@drawable/count_background"
+        android:elevation="3dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/btn_them"
+        app:layout_constraintEnd_toStartOf="@+id/btn_them"
+        app:layout_constraintStart_toEndOf="@+id/gia"
+        app:layout_constraintTop_toTopOf="@+id/btn_them" />
+
+    <TextView
+        android:id="@+id/soluong"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/white_item_btn"
+        android:elevation="3dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+
+    <ImageButton
+        android:id="@+id/btn_tang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/count_background"
+        android:elevation="3dp"
+        android:src="@drawable/plus"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintEnd_toStartOf="@+id/soluong"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+
+    <ImageButton
+        android:id="@+id/btn_giam"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/count_background"
+        android:elevation="3dp"
+        android:src="@drawable/minus"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/soluong"
+        app:layout_constraintTop_toTopOf="@+id/imageButton"
+        tools:ignore="UnknownId" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
